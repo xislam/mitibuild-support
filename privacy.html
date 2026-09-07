@@ -10,36 +10,85 @@
   h1 { font-size: 1.6em; } h2 { font-size: 1.2em; margin-top: 2em; }
   hr { border: none; border-top: 1px solid #d2d2d7; margin: 3em 0; }
   .muted { color: #6e6e73; font-size: 0.9em; }
+  ul { padding-left: 1.2em; }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy — MitiBuild AI</h1>
-<p class="muted">Effective date: August 16, 2026</p>
+<p class="muted">Effective date: September 7, 2026. Replaces the version of
+August 16, 2026, which described the app before company accounts existed.</p>
 
-<p>MitiBuild AI is an offline bookkeeping app for tracking business income and
-expenses. It is developed by Mitihub LLC.</p>
+<p>MitiBuild AI is a bookkeeping app for construction companies, developed by
+Mitihub LLC. It works on your device and can optionally synchronise with a
+server we own and operate, so that colleagues in the same company share one set
+of records.</p>
 
-<h2>We do not collect your data</h2>
-<p>MitiBuild AI works entirely on your device. The app does not require an
-account, does not connect to any server, and does not transmit your data
-anywhere. Everything you enter — transactions, categories, accounts,
-counterparties, and receipt photos — is stored only in the app's local storage
-on your phone.</p>
+<h2>Working without an account</h2>
+<p>An account is optional. The first screen offers “Work without a company for
+now”, and in that mode the app never contacts the network: everything you enter
+— transactions, categories, accounts, counterparties and receipt photos — stays
+in the app's local storage on your phone and is sent nowhere.</p>
 
-<h2>Camera and photos</h2>
-<p>The app asks for camera or photo library access only when you attach a photo
-of a receipt or invoice to a transaction. Photos are saved inside the app's
-private folder on your device and are never uploaded.</p>
+<h2>Working with a company account</h2>
+<p>If you create or join a company, the records of that company are copied to
+our server so your colleagues can see them. What is transmitted:</p>
+<ul>
+<li>your e-mail address and password, used only to sign you in;</li>
+<li>the bookkeeping records themselves: transactions and their line items,
+accounts, categories, sites and their budgets, cash advances, workers and
+timesheet days, tasks, planned entries, purchase checks and edit requests,
+stores and suppliers;</li>
+<li>the profile you fill in about yourself: name, phone number, job title and,
+if you add one, a photo;</li>
+<li>photos of receipts you attach, up to 3 MB each, so that whoever checks
+purchases in your company can see the receipt;</li>
+<li>messages and attachments you post in the company chat or the public chat;</li>
+<li>a Firebase Cloud Messaging token, used only to deliver push notifications
+to your device.</li>
+</ul>
+<p>Data belongs to your company and is isolated from every other company by the
+server itself. We do not sell it, do not share it with advertisers, and do not
+use it to train anything. Inside your company, who sees which figures is decided
+by the owner.</p>
+
+<h2>Receipt recognition happens on your device</h2>
+<p>When you photograph a receipt, the text is recognised by your phone (Apple
+Vision on iOS, ML Kit on Android). The photo is not sent to any recognition or
+AI service, ours or anyone else's. The category suggestion and the built-in
+assistant are a small model that learns inside the app and sends nothing
+anywhere.</p>
+
+<h2>Shared price information</h2>
+<p>If your company keeps this switched on, the app contributes anonymous price
+lines from receipts — the item, unit, unit price, currency, shop and date — so
+that companies can compare prices. Your company name, the buyer and the receipt
+total are never included, and a price is shown to others only after at least
+three independent companies have recorded it. The owner can switch this off in
+the app at any time.</p>
+
+<h2>Camera, photos and location</h2>
+<p>Camera and photo library access is requested only when you attach or
+photograph a receipt. Location is requested only at the moment you tap to mark a
+shop on the map, and only while the app is open; the app never requests or uses
+background location.</p>
 
 <h2>Analytics and third parties</h2>
-<p>The app contains no analytics, no advertising, and no third-party tracking
-SDKs.</p>
+<p>The app contains no analytics, no advertising and no third-party tracking
+SDKs. The only third-party service is Firebase Cloud Messaging, used solely to
+deliver push notifications.</p>
 
-<h2>Data export and deletion</h2>
-<p>You can export your records to a CSV file at any time using the system share
-sheet. Deleting the app from your device permanently deletes all data stored by
-the app.</p>
+<h2>Export and deletion</h2>
+<p>You can export your records to CSV or a full backup file at any time through
+the system share sheet; the app itself sends them nowhere.</p>
+<p>You can delete your account from inside the app: More → Profile → “Delete
+account”. This deletes your sign-in record from our server permanently. If you
+own a company that still has employees in it, you are asked to hand the company
+over first, so that deleting one person does not erase everyone else's work; a
+company with no one else in it is deleted together with your account. Records
+already stored on your own phone stay on the phone, and the app keeps working
+without an account. Deleting the app from your device removes the local copy but
+does not delete data already synchronised to your company.</p>
 
 <h2>Contact</h2>
 <p>If you have any questions about this policy, contact us at
@@ -47,35 +96,80 @@ the app.</p>
 
 <hr>
 
-<h1 lang="ru">Политика конфиденциальности — MitiBuild AI</h1>
-<p class="muted" lang="ru">Действует с 16 августа 2026 г.</p>
+<h1>Политика конфиденциальности — MitiBuild AI</h1>
+<p class="muted">Действует с 7 сентября 2026 г. Заменяет редакцию от 16 августа
+2026 г., которая описывала приложение до появления учётных записей компании.</p>
 
-<div lang="ru">
-<p>MitiBuild AI — офлайн-приложение для учёта доходов и расходов компании.
-Разработчик — Mitihub LLC.</p>
+<p>MitiBuild AI — приложение для учёта в строительной компании, разработчик —
+Mitihub LLC. Оно работает на вашем устройстве и по желанию синхронизируется с
+нашим сервером, чтобы коллеги из одной компании вели общий учёт.</p>
 
-<h2>Мы не собираем ваши данные</h2>
-<p>MitiBuild AI работает полностью на вашем устройстве. Приложению не нужен
-аккаунт, оно не подключается к серверам и никуда не передаёт ваши данные. Всё,
-что вы вводите — операции, категории, счета, контрагенты и фото чеков —
-хранится только в локальном хранилище приложения на вашем телефоне.</p>
+<h2>Работа без учётной записи</h2>
+<p>Учётная запись необязательна. На первом экране есть кнопка «Пока поработать
+без компании», и в этом режиме приложение вообще не выходит в сеть: всё, что вы
+вводите — операции, категории, счета, контрагенты и фото чеков, — хранится
+только в локальном хранилище приложения и никуда не отправляется.</p>
 
-<h2>Камера и фотографии</h2>
-<p>Приложение запрашивает доступ к камере или галерее только когда вы
-прикрепляете фото чека или накладной к операции. Фотографии сохраняются во
-внутренней папке приложения на устройстве и никуда не загружаются.</p>
+<h2>Работа с учётной записью компании</h2>
+<p>Если вы завели компанию или вступили в неё, записи этой компании уезжают на
+наш сервер, чтобы их видели коллеги. Что передаётся:</p>
+<ul>
+<li>адрес почты и пароль — только для входа;</li>
+<li>сами учётные записи: операции и их позиции, счета, категории, объекты и
+выделенные на них деньги, подотчёт, работники и дни табеля, задачи, плановые
+записи, проверки закупов и просьбы исправить, магазины и поставщики;</li>
+<li>карточка, которую вы заполняете о себе: имя, телефон, должность и, если
+добавите, фотография;</li>
+<li>фотографии чеков, которые вы прикрепляете, до 3 МБ каждая — чтобы чек видел
+тот, кто проверяет закупы в вашей компании;</li>
+<li>сообщения и вложения, которые вы пишете в чат компании или в общий чат;</li>
+<li>токен Firebase Cloud Messaging — только чтобы доставлять уведомления на ваш
+телефон.</li>
+</ul>
+<p>Данные принадлежат вашей компании, и сервер отделяет их от любой другой
+компании. Мы их не продаём, не передаём рекламодателям и ни на чём не обучаем.
+Кто внутри компании видит какие суммы, решает её владелец.</p>
+
+<h2>Чек распознаётся на вашем телефоне</h2>
+<p>Когда вы снимаете чек, текст распознаёт сам телефон (Apple Vision на iOS,
+ML Kit на Android). Фотография не отправляется ни в какую службу распознавания
+или ИИ — ни в нашу, ни в чужую. Подсказка статьи расхода и встроенный помощник —
+небольшая модель, которая учится внутри приложения и ничего никуда не шлёт.</p>
+
+<h2>Общая база цен</h2>
+<p>Если компания оставила это включённым, приложение отдаёт обезличенные строки
+цен из чеков: товар, единицу, цену за единицу, валюту, магазин и дату. Названия
+компании, имени покупателя и итога чека там нет, а другим цена показывается
+только после того, как её независимо записали не менее трёх компаний. Владелец
+может выключить обмен ценами в приложении в любой момент.</p>
+
+<h2>Камера, фотографии и геопозиция</h2>
+<p>Доступ к камере и галерее запрашивается только когда вы снимаете или
+прикрепляете чек. Геопозиция запрашивается только в момент, когда вы сами
+нажимаете отметить магазин на карте, и только при открытом приложении; в фоне
+приложение местоположение не запрашивает и не использует.</p>
 
 <h2>Аналитика и третьи стороны</h2>
-<p>В приложении нет аналитики, рекламы и сторонних SDK для отслеживания.</p>
+<p>В приложении нет аналитики, рекламы и сторонних следящих SDK. Единственная
+сторонняя служба — Firebase Cloud Messaging, и только для доставки
+уведомлений.</p>
 
-<h2>Экспорт и удаление данных</h2>
-<p>Вы в любой момент можете выгрузить свои записи в CSV-файл через системное
-«Поделиться». Удаление приложения с устройства безвозвратно удаляет все его
-данные.</p>
+<h2>Выгрузка и удаление</h2>
+<p>Вы можете в любой момент выгрузить свои записи в CSV или полную резервную
+копию через системное окно «Поделиться»; само приложение никуда их не
+отправляет.</p>
+<p>Удалить учётную запись можно прямо в приложении: «Ещё» → «Профиль» →
+«Удалить аккаунт». Запись входа удаляется с нашего сервера навсегда. Если вы
+владелец компании, в которой ещё работают люди, сначала попросят передать
+компанию — чтобы удаление одного человека не стёрло работу остальных; компания,
+в которой больше никого нет, удаляется вместе с учётной записью. Записи на
+вашем телефоне остаются, и приложение продолжает работать без учётной записи.
+Удаление приложения с устройства стирает местную копию, но не удаляет данные,
+которые уже уехали в вашу компанию.</p>
 
-<h2>Контакты</h2>
-<p>Вопросы по этой политике: <a href="mailto:miti@mitihub.com">miti@mitihub.com</a>.</p>
-</div>
+<h2>Связь с нами</h2>
+<p>Вопросы по этой политике — на
+<a href="mailto:miti@mitihub.com">miti@mitihub.com</a>.</p>
 
 </body>
 </html>
