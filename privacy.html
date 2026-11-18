@@ -122,20 +122,29 @@ profile itself is kept and comes back when he leaves.</p>
 
 <h2>Camera, photos, microphone and location</h2>
 <p>Camera and photo library access is requested when you photograph or attach a
-receipt, and when you add photos or a video of your work to the feed. The
-microphone is used for the sound in such a video and for the voice assistant;
-speech is recognised on the device itself and the recording is sent nowhere.
-Location is requested at the moment you tap to mark a shop on the map, and — only
-if you switch it on yourself in “My location” — to show colleagues in your
-company where you are during the working day. That switch is off by default, the
-app takes no position while it is not in front of you, and the points are deleted
-after 30 days.</p>
+receipt, when you add photos or a video of your work to the feed, and when you
+scan a site's QR code. The microphone is used for the sound in such a video and
+for the voice assistant; speech is recognised on the device itself and the
+recording is sent nowhere.</p>
+<p>Location is used in three cases, each started by you. When you tap to mark a
+shop or a site on the map, the app saves the coordinates of that place. When you
+check in or out at a site by its QR code and the site has a place on the map, the
+phone takes your position once to confirm you are there, and it is saved with the
+shift in your company's records. And only if you switch it on yourself in “My
+location” do colleagues in your company see where you are during the working day.
+That switch is off by default, the app takes no position while it is not in front
+of you, and the points are deleted after 30 days.</p>
+<p>Maps are drawn with OpenStreetMap tiles: to show part of a map, the phone
+requests it from OpenStreetMap's servers (tile.openstreetmap.org). They see your
+connection's IP address and which area of the map is shown, but not your account
+or your check-ins.</p>
 
 <h2>Analytics and third parties</h2>
 <p>The app contains no analytics, no advertising and no third-party tracking
 SDKs. Firebase Cloud Messaging is used solely to deliver push notifications.
 Messages of connected WhatsApp work groups are processed on our behalf by
-Anthropic, PBC, as described above.</p>
+Anthropic, PBC, as described above. Map tiles come from OpenStreetMap, as
+described in the section on location.</p>
 
 <h2>Export and deletion</h2>
 <p>You can export your records to CSV or a full backup file at any time through
@@ -258,19 +267,29 @@ Claude компании Anthropic, PBC, — только чтобы записа
 
 <h2>Камера, фотографии, микрофон и геопозиция</h2>
 <p>Доступ к камере и галерее запрашивается, когда вы снимаете или прикрепляете
-чек и когда добавляете в ленту фотографии или ролик своей работы. Микрофон нужен
-для звука в таком ролике и для голосового помощника; речь распознаётся на самом
-телефоне, и запись никуда не отправляется. Геопозиция запрашивается в момент,
-когда вы сами отмечаете магазин на карте, и — только если вы включили это сами в
-разделе «Моя геопозиция» — чтобы коллеги по компании видели, где вы в рабочий
-день. Переключатель по умолчанию выключен, в фоне приложение положение не берёт,
-а отметки удаляются через 30 дней.</p>
+чек, когда добавляете в ленту фотографии или ролик своей работы и когда
+сканируете QR-код объекта. Микрофон нужен для звука в таком ролике и для
+голосового помощника; речь распознаётся на самом телефоне, и запись никуда не
+отправляется.</p>
+<p>Геопозиция нужна в трёх случаях, и все — по вашему действию. Когда вы сами
+отмечаете магазин или объект на карте, сохраняются координаты этого места. Когда
+вы отмечаете приход или уход на объекте по его QR-коду, а у объекта есть место на
+карте, телефон один раз берёт вашу точку — проверить, что вы на объекте, — и она
+сохраняется в отметке смены в учёте компании. И только если вы включили это сами
+в разделе «Моя геопозиция», коллеги по компании видят, где вы в рабочий день.
+Переключатель по умолчанию выключен, в фоне приложение положение не берёт, а
+отметки удаляются через 30 дней.</p>
+<p>Карту рисуют плитки OpenStreetMap: чтобы показать участок карты, телефон
+запрашивает его с серверов OpenStreetMap (tile.openstreetmap.org). Им видны адрес
+вашего подключения и какой участок карты открыт, но не ваша учётная запись и не
+ваши отметки.</p>
 
 <h2>Аналитика и третьи стороны</h2>
 <p>В приложении нет аналитики, рекламы и сторонних следящих SDK. Firebase Cloud
 Messaging нужен только для доставки уведомлений. Переписку подключённых рабочих
 групп WhatsApp по нашему поручению обрабатывает Anthropic, PBC, — как написано
-выше.</p>
+выше. Плитки карты приходят с OpenStreetMap — об этом в разделе о
+геопозиции.</p>
 
 <h2>Выгрузка и удаление</h2>
 <p>Вы можете в любой момент выгрузить свои записи в CSV или полную резервную
